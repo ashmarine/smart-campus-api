@@ -149,7 +149,7 @@ curl -X POST http://localhost:8080/w2006630_AshleyAnnor_SmartRoomCampus/api/v1/s
 curl http://localhost:8080/w2006630_AshleyAnnor_SmartRoomCampus/api/v1/sensors/CO2-001/readings
 ```
 
-## Report
+### Report
 
 ## Project & Application Configuration
 
