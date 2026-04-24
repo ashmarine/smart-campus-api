@@ -41,8 +41,57 @@ If you see this:
 ```
 {"name":"Smart Campus Sensor and Room Management API","version":"v1","status":"online","adminContact":{"team":"Smart Campus Support","email":"smartcampussupport@westminster.ac.uk"},"resources":{"self":"/api/v1","rooms":"/api/v1/rooms","sensors":"/api/v1/sensors"}}
 ```
-then everything should be working
+then everything should be working.
 
+
+## Sample Curl Commands
+Here are some requests you could try on the API. These have been tested through out development of this project.
+
+### Example 1: Getting the discovery endpoint
+```bash
+curl http://localhost:8080/w2006630_AshleyAnnor_SmartRoomCampus/api/v1
+```
+
+### Example 2: Get all rooms
+```bash
+curl http://localhost:8080/w2006630_AshleyAnnor_SmartRoomCampus/api/v1/rooms
+```
+
+### Example 3: Create a room
+```bash
+curl -X POST http://localhost:8080/w2006630_AshleyAnnor_SmartRoomCampus/api/v1/rooms \
+-H "Content-Type: application/json" \
+-d '{"id":"LIB-301","name":"Library Quiet Study","capacity":40}'
+```
+
+### Example 4: Get all sensors
+```bash
+curl http://localhost:8080/w2006630_AshleyAnnor_SmartRoomCampus/api/v1/sensors
+```
+
+### Example 5: Create a sensor:
+```bash
+curl -X POST http://localhost:8080/w2006630_AshleyAnnor_SmartRoomCampus/api/v1/sensors \
+-H "Content-Type: application/json" \
+-d '{"id":"CO2-001","type":"CO2","status":"ACTIVE","currentValue":415.5,"roomId":"LIB-301"}'
+```
+
+### Example 6: Filter sensors by type
+```bash
+curl "http://localhost:8080/w2006630_AshleyAnnor_SmartRoomCampus/api/v1/sensors?type=CO2"
+```
+
+### Example 7: Add a reading
+```bash
+curl -X POST http://localhost:8080/w2006630_AshleyAnnor_SmartRoomCampus/api/v1/sensors/CO2-001/readings \
+-H "Content-Type: application/json" \
+-d '{"id":"READ-001","timestamp":1713888000000,"value":430.2}'
+```
+
+### Example 8: Get sensor readings
+```bash
+curl http://localhost:8080/w2006630_AshleyAnnor_SmartRoomCampus/api/v1/sensors/CO2-001/readings
+```
 
 ## Report
 
