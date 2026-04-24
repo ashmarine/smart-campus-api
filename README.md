@@ -9,7 +9,7 @@ Ashley Annor
 ### Overview
 This project is a RESTful Smart Campus API built using JAX-RS. This was developed to manage rooms, sensors and its readings within a university campus.
 The API allows clients to view rooms, register sensors inside rooms, filter sensors by type and store historical readings for each sensor. This also includes custom exception handling and logging to improve reliability and make the service easier to manage as well as more room for further expansion should they wish to do so.
-This system uses data structures like 'HashMap' and 'ArrayList' instead of a database to be in line withthe coursework requirements.
+This system uses data structures like 'HashMap' and 'ArrayList' instead of a database to be in line with the coursework requirements.
 
 
 ### Project Structure
