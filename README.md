@@ -1,12 +1,50 @@
 ## Smart Campus Sensor and Room Management API
-** 5COSC022W - Client Server Architectures **
-** University of Westminster **
-** w20066301 **
-** Ashley Annor **
+5COSC022W - Client Server Architectures
+University of Westminster
+w20066301
+Ashley Annor
 
-/
+---
+## How to Build and Run the Project
+
+### Checklist of Software
+
+- Java JDK 17 from adoptum.net
+- Apache Maven - from maven.apache.org
+- Apache Tomcat 10 or higher from tomcat.apache.org
+- Apache Netbeans 18 or higher (The software used to build the API)
+
+### Step 1: Clone The Repo
+
+```bash
+git clone https://github.com/ashmarine/smart-campus-api.git
+```
+
+### Step 2: Build The Project
+
+After cloning the repository, open the project folder using NetBeans and then right click the project, click "Clean and Build" followed by the "Run" button.
+
+If everything is successful, Maven should be downloading the dependencies and building the project.
+
+### Step 3: Run The Project
+
+Right click the project and select "Run"
+Wait for the server to deploy the application
+Open Postman or a browser window
+Use the base URL: 
+
+```
+http://localhost:8080/w2006630_AshleyAnnor_SmartRoomCampus/api/v1
+```
+
+If you see this:
+```
+{"name":"Smart Campus Sensor and Room Management API","version":"v1","status":"online","adminContact":{"team":"Smart Campus Support","email":"smartcampussupport@westminster.ac.uk"},"resources":{"self":"/api/v1","rooms":"/api/v1/rooms","sensors":"/api/v1/sensors"}}
+```
+then everything should be working
+
+
 ## Report
-/
 
 ## Project & Application Configuration
 
