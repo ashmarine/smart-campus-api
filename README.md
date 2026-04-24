@@ -5,6 +5,56 @@ w20066301
 Ashley Annor
 
 ---
+
+### Project Structure
+
+```
+smart-campus-api/
+├── pom.xml
+├── README.md
+└── src/
+    └── main/
+        ├── java/
+        │   └── com/
+        │       └── mycompany/
+        │           └── w2006630_ashleyannor_smartroomcampus/
+        │               ├── JAXRSConfiguration.java
+        │               ├── exceptions/
+        │               │   ├── LinkedResourceNotFoundException.java
+        │               │   ├── RoomNotEmptyException.java
+        │               │   └── SensorUnavailableException.java
+        │               ├── filters/
+        │               │   └── LoggingFilter.java
+        │               ├── mappers/
+        │               │   ├── LinkedResourceNotFoundExceptionMapper.java
+        │               │   ├── RoomNotEmptyExceptionMapper.java
+        │               │   ├── SensorUnavailableExceptionMapper.java
+        │               │   └── ThrowableExceptionMapper.java
+        │               ├── models/
+        │               │   ├── ErrorResponse.java
+        │               │   ├── Room.java
+        │               │   ├── Sensor.java
+        │               │   └── SensorReading.java
+        │               ├── resources/
+        │               │   ├── DiscoveryResource.java
+        │               │   ├── RoomResource.java
+        │               │   ├── SensorReadingResource.java
+        │               │   └── SensorResource.java
+        │               └── store/
+        │                   └── DataStore.java
+        ├── resources/
+        │   └── META-INF/
+        └── webapp/
+            ├── META-INF/
+            │   └── context.xml
+            ├── WEB-INF/
+            │   ├── beans.xml
+            │   └── web.xml
+            └── index.html
+
+```
+
+
 ## How to Build and Run the Project
 
 ### Checklist of Software
